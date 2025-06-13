@@ -1,0 +1,1 @@
+import timefocus_min = int(input("time you need for focus? "))focus_sec = focus_min * 60while focus_sec > 0:    mins = focus_sec // 60    sec = focus_sec % 60    print(f"Time left : {mins:02d}:{sec:02d}", end="\r")    time.sleep(1)    focus_sec -= 1    if focus_sec == 0:        print("Time's up!")
